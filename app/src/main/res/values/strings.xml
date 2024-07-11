@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="ProgramTitleText">Калькулятор времени</string>
+    <string name="plusButtonText">+</string>
+    <string name="minusButtonText">-</string>
+    <string name="ResultText">Результат</string>
+    <string name="resetText">Сброс</string>
+    <string name="exitText">Выход</string>
+</resources>
