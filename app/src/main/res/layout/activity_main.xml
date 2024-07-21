@@ -5,16 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:ignore="MissingClass">
+    tools:context=".MainActivity">
 
-    
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarMain"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/ProgramTitleIV"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/toolbarColor"
-        tools:ignore="MissingConstraints"/>
+        android:text="@string/ProgramTitleText"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
     <LinearLayout
         android:id="@+id/LinearLayoutInputOperand"
@@ -25,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarMain"
+        app:layout_constraintTop_toBottomOf="@+id/ProgramTitleIV"
         app:layout_constraintVertical_bias="0.1">
 
         <EditText
@@ -63,17 +66,14 @@
             android:layout_height="wrap_content"
             android:text="@string/plusButtonText"
             android:textSize="36sp"
-            android:layout_weight="1"
-            app:backgroundTint="@color/buttonColor"/>
-
+            android:layout_weight="1"/>
         <Button
             android:id="@+id/minusButtonBT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/minusButtonText"
             android:textSize="36sp"
-            android:layout_weight="1"
-            app:backgroundTint="@color/buttonColor"/>
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
@@ -89,6 +89,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LinearLayoutButtonBT"
         app:layout_constraintVertical_bias="0.2"/>
+    <LinearLayout
+        android:id="@+id/LinearLayoutResetExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15pt"
+        android:layout_marginRight="15pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTV"
+        app:layout_constraintVertical_bias="0.5"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/resetButtonBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resetText"
+            android:textSize="36sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,4 @@
 <resources>
-
     <string name="app_name">Calculator</string>
     <string name="ProgramTitleText">Калькулятор времени</string>
     <string name="plusButtonText">+</string>
